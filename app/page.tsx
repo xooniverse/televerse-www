@@ -59,10 +59,10 @@ void main(List<String> args) async {
               pub.dev
             </a>
             <a
-              href="/docs"
+              href="https://github.com/xooniverse/televerse"
               className="bg-white bg-opacity-20 text-white py-2 px-4 rounded-lg hover:bg-opacity-30 transition text-center"
             >
-              Documentation
+              GitHub
             </a>
           </div>
         </div>
