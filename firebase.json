@@ -11,6 +11,10 @@
       {
         "source": "**",
         "destination": "/index.html"
+      },
+      {
+        "source": "/doc/custom-context",
+        "destination": "https://github.com/xooniverse/televerse/wiki/Using-Custom-Context-with-Your-Bot"
       }
     ]
   }

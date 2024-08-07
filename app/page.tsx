@@ -49,7 +49,14 @@ void main(List<String> args) async {
             to a seamless and efficient experience. Easily create, manage, and
             scale your bots with a framework designed for simplicity and power.
           </p>
-          <div className="flex flex-col md:flex-row md:justify-start mt-4 space-y-2 md:space-y-0 md:space-x-4">
+          <div className="flex flex-col md:flex-row md:justify-start mt-4 space-y-2 md:space-y-0 md:space-x-4 justify-center items-center w-full">
+            <a
+              target="_blank"
+              href="https://github.com/xooniverse/televerse"
+              className="bg-white bg-opacity-20 text-white py-2 px-4 rounded-lg hover:bg-opacity-30 transition text-center"
+            >
+              GitHub
+            </a>
             <a
               href="https://pub.dev/packages/televerse"
               target="_blank"
@@ -57,12 +64,6 @@ void main(List<String> args) async {
               className="bg-white bg-opacity-20 text-white py-2 px-4 rounded-lg hover:bg-opacity-30 transition text-center"
             >
               pub.dev
-            </a>
-            <a
-              href="https://github.com/xooniverse/televerse"
-              className="bg-white bg-opacity-20 text-white py-2 px-4 rounded-lg hover:bg-opacity-30 transition text-center"
-            >
-              GitHub
             </a>
           </div>
         </div>
