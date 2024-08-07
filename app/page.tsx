@@ -1,11 +1,11 @@
-'use client';
-import Image from 'next/image';
-import { useState } from 'react';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { darcula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+"use client";
+import Image from "next/image";
+import { useState } from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function Home() {
-  const [copySuccess, setCopySuccess] = useState('');
+  const [copySuccess, setCopySuccess] = useState("");
 
   const codeString = `import 'dart:io';
 import 'package:televerse/televerse.dart';
@@ -25,8 +25,8 @@ void main(List<String> args) async {
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(codeString);
-    setCopySuccess('Copied!');
-    setTimeout(() => setCopySuccess(''), 2000);
+    setCopySuccess("Copied!");
+    setTimeout(() => setCopySuccess(""), 2000);
   };
 
   return (
@@ -41,9 +41,13 @@ void main(List<String> args) async {
             className="md:ml-0 ml-auto mb-4"
             priority
           />
-          <h1 className="text-4xl md:text-5xl font-bold text-white mt-4 text-center md:text-left">Build Bots, Like A Pro</h1>
-          <p className="text-white mt-2 text-center md:text-left text-lg md:text-xl">
-            Elevate your Telegram bot development with Televerse – your gateway to a seamless and efficient experience. Easily create, manage, and scale your bots with a framework designed for simplicity and power.
+          <h1 className="text-4xl md:text-5xl font-bold text-white mt-4 text-center md:text-left">
+            Build Bots, Like A Pro
+          </h1>
+          <p className="text-white mt-2 text-center md:text-justify text-lg md:text-xl">
+            Elevate your Telegram bot development with Televerse – your gateway
+            to a seamless and efficient experience. Easily create, manage, and
+            scale your bots with a framework designed for simplicity and power.
           </p>
           <div className="flex flex-col md:flex-row md:justify-start mt-4 space-y-2 md:space-y-0 md:space-x-4">
             <a
@@ -58,7 +62,7 @@ void main(List<String> args) async {
               href="/docs"
               className="bg-white bg-opacity-20 text-white py-2 px-4 rounded-lg hover:bg-opacity-30 transition text-center"
             >
-              Docs
+              Documentation
             </a>
           </div>
         </div>
@@ -69,10 +73,14 @@ void main(List<String> args) async {
               onClick={copyToClipboard}
               className="text-sm text-blue-400 hover:underline focus:outline-none"
             >
-              {copySuccess ? copySuccess : 'Copy'}
+              {copySuccess ? copySuccess : "Copy"}
             </button>
           </div>
-          <SyntaxHighlighter language="dart" style={darcula} customStyle={{ padding: '1rem', borderRadius: '0.5rem' }}>
+          <SyntaxHighlighter
+            language="dart"
+            style={darcula}
+            customStyle={{ padding: "1rem", borderRadius: "0.5rem" }}
+          >
             {codeString}
           </SyntaxHighlighter>
         </div>
