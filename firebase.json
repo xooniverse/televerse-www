@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "out",
     "site": "televerse",
     "ignore": [
       "firebase.json",
