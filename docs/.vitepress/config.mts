@@ -28,10 +28,31 @@ export default defineConfig({
       },
       {
         text: 'Context',
+        base: "/context",
         items: [
-          { text: 'Using Custom Context with Your Bot', link: '/context/custom-context' },
+          { text: 'Using Custom Context with Your Bot', link: '/custom-context' },
         ]
-      }
+      },
+      {
+        text: 'Plugins',
+        base: "/plugins",
+        link: "/",
+        items: [
+          { text: 'Overview', link: '/' },
+          {
+            text: 'Official Plugins',
+            collapsed: true,
+            base: "/plugins/plugin",
+            items: [
+              { text: "auto_retry", link: "/auto-retry" },
+              { text: "auto_chat_action", link: "/auto-chat-action" },
+              { text: "parse_mode_setter", link: "/parse-mode-setter" },
+            ]
+          },
+          { text: 'Build A Middleware', link: '/build-middleware' },
+          { text: 'Build A Transformer', link: '/build-transformer' },
+        ]
+      },
     ],
 
     socialLinks: [
