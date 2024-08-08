@@ -62,6 +62,7 @@ export default defineConfig({
         text: 'Context',
         base: "/context",
         items: [
+          { text: 'What is it?', link: '/' },
           { text: 'Using Custom Context with Your Bot', link: '/custom-context' },
         ]
       },
