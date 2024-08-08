@@ -101,3 +101,8 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+
+# VitePress
+docs/.vitepress/cache
+docs/.vitepress/dist
