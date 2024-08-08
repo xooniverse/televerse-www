@@ -22,7 +22,8 @@ export default defineConfig({
         link: "/",
         items: [
           { text: "Features", link: "/features" },
-          { text: "Installation", link: "/installation" }
+          { text: "Installation", link: "/installation" },
+          { text: "Build Your First Bot", link: "/hello-world" },
         ]
       },
       {
