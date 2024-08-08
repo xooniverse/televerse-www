@@ -5,6 +5,37 @@ export default defineConfig({
   outDir: "../out",
   title: "Televerse - Your gateway to seamless Telegram Bot Development",
   description: "Your gateway to a seamless Telegram Bot development",
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: 'https://televerse.xooniverse.com/assets/logo.png' }],
+    ['meta', { name: 'description', content: 'A powerful Telegram Bot API Framework built with Dart' }],
+    ['meta', { name: 'keywords', content: 'Televerse, Telegram bot, Dart, Telegram API, bot framework, Xooniverse' }],
+
+    // Open Graph Meta Tags
+    ['meta', { property: 'og:title', content: 'Televerse' }],
+    ['meta', { property: 'og:description', content: 'A powerful, easy-to-use, and highly customizable Telegram bot framework built with Dart language.' }],
+    ['meta', { property: 'og:image', content: 'https://televerse.xooniverse.com/assets/lockup-with-bg.png' }],
+    ['meta', { property: 'og:url', content: 'https://github.com/Xooniverse/televerse' }],
+    ['meta', { property: 'og:site_name', content: 'Televerse' }],
+
+    // Twitter Meta Tags
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'Televerse' }],
+    ['meta', { name: 'twitter:description', content: 'A powerful, easy-to-use, and highly customizable Telegram bot framework built with Dart language.' }],
+    ['meta', { name: 'twitter:image', content: 'https://televerse.xooniverse.com/assets/lockup-with-bg.png' }],
+
+    // Robots Meta Tag
+    ['meta', { name: 'robots', content: 'index, follow' }],
+
+    // Alternate Links
+    ['link', { rel: 'alternate', hreflang: 'en', href: 'https://televerse.xooniverse.com/en' }],
+
+    // Canonical Link
+    ['link', { rel: 'canonical', href: 'https://televerse.xooniverse.com' }],
+
+    // Author and Publisher
+    ['meta', { name: 'author', content: 'Xooniverse' }],
+    ['meta', { name: 'publisher', content: 'Xooniverse' }],
+  ],
   themeConfig: {
     externalLinkIcon: true,
     siteTitle: "Televerse",
@@ -14,6 +45,7 @@ export default defineConfig({
       { text: 'Docs', link: '/docs' },
       { text: 'Examples', link: 'https://github.com/xooniverse/TeleverseExamples' }
     ],
+
 
     sidebar: [
       {
