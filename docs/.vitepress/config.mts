@@ -58,10 +58,10 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Context',
-        base: "/context",
+        text: 'Basics',
+        base: "/basics",
         items: [
-          { text: 'What is it?', link: '/' },
+          { text: 'Context', link: '/context' },
           { text: 'Using Custom Context with Your Bot', link: '/custom-context' },
         ]
       },
