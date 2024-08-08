@@ -46,10 +46,9 @@ export default defineConfig({
       { text: 'Examples', link: 'https://github.com/xooniverse/TeleverseExamples' }
     ],
 
-
     sidebar: [
       {
-        text: 'Overview',
+        text: 'Getting Started',
         base: "/docs",
         link: "/",
         items: [

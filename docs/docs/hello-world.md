@@ -23,12 +23,12 @@ import 'package:televerse/televerse.dart';
 And create the bot instance like:
 
 ```dart
-    // Optional but safe: Get bot token from environment variables
-    final String token = Platform.environment["BOT_TOKEN"]!;
+// Optional but safe: Get bot token from environment variables
+final String token = Platform.environment["BOT_TOKEN"]!;
 
-    // Pass the bot token into Bot class to get an instance.
-    Bot bot = Bot(token); 
-    // This is the same as Televerse bot = Televerse(token)
+// Pass the bot token into Bot class to get an instance.
+Bot bot = Bot(token); 
+// This is the same as Televerse bot = Televerse(token)
 ```
 
 Whoohoo! We have our bot instance ready to lunch! 🚀
@@ -47,10 +47,10 @@ So you need to setup a listener for the `/start` command as Telegram bots are al
 Televerse provides a simple way to setup listeners for the events. You can use the `command` method to add a listener for the comamnds you specify. So let's do this for `/start`.
 
 ```dart
-    bot.command("start", (ctx) {
-        final String name = ctx.message.from!.firstName;
-        ctx.reply("Hello $name!");
-    });
+bot.command("start", (ctx) {
+    final String name = ctx.message.from!.firstName;
+    ctx.reply("Hello $name!");
+});
 ```
 
 The callback function accepts a parameter of type `MessageContext` which contains all the useful methods and data about the currently recieved message. For example, we can get the incoming message that is `/start` command message using `ctx.message` and can get the first name of the user as `ctx.message.from!.firstName`.
@@ -73,22 +73,13 @@ Whoohoo! That's a good sign! We got the first message from our bot! 🎉
 
 One last listener for the text messages. Let's learn about one more powerful method on Televerse.
 
-It's the `on` method. The `on` method lets you filter out updates and listen for particular messages only. We're good to try it right away.
-
-Set a listener for the `TeleverseEvent.text` filter. On the `on` method the callback function accepts the parameter of type `Context` which is an abstract class contains all basics methods and properties about the particular incoming update.
-
-📝 Note: You might need to manually type cast to desired `Context` object such as `MessageContext` to have access to better context usage. 
-
-The reason behind this is, with the `on` method you can listen to a vast variety of incoming updates - not just limited to incoming messages but also to callback queries, and inline queries etc.
-
-So, let's type cast the `ctx` object to `MessageContext` and use it to reply with the length of the message.
+It's the `Bot.onText`. The `onText` method in the `Bot` class is designed to listen for incoming text messages. It takes a `Handler` function as an argument to process the incoming `Message` update. Since this method specifically targets text message updates, you can be confident that the `Message` object will always be present in the update.
 
 ```dart
-  bot.on(TeleverseEvent.text, (ctx) {
-    ctx as MessageContext;
-    final int letterCount = ctx.message.text!.length;
-    ctx.reply("Your message has $letterCount letters.");
-  });
+bot.onText((ctx) async {
+  final int letterCount = ctx.message!.text!.length;
+  await ctx.reply("Your message has $letterCount letters.");
+});
 ```
 
 There we go! Now when you send a text message bot replies with the count of characters in your message!
