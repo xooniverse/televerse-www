@@ -1,4 +1,4 @@
-![](https://televerse.web.app/assets/lockup.png)
+![](https://televerse.xooniverse.com/assets/banner-transparent.png)
 
 # Televerse Space
 
