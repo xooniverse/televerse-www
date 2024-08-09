@@ -46,10 +46,9 @@ export default defineConfig({
       { text: 'Examples', link: 'https://github.com/xooniverse/TeleverseExamples' }
     ],
 
-
     sidebar: [
       {
-        text: 'Overview',
+        text: 'Getting Started',
         base: "/docs",
         link: "/",
         items: [
@@ -59,11 +58,21 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Context',
-        base: "/context",
+        text: 'Basics',
+        base: "/basics",
+        items: [
+          { text: "Bot Class", link: "/bot" },
+          { text: "RawAPI Class", link: "/api" },
+          { text: 'Context', link: '/context' },
+          { text: 'Receiving Updates', link: '/receiving-updates' },
+        ]
+      },
+      {
+        text: "Advanced",
+        base: "/advanced",
         items: [
           { text: 'Using Custom Context with Your Bot', link: '/custom-context' },
-        ]
+        ],
       },
       {
         text: 'Plugins',
