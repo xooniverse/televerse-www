@@ -2,7 +2,7 @@
 
 The `Bot` class is the primary class of the Televerse framework. It is the central point of interaction for managing your Telegram bot. This class provides a wide range of methods to handle incoming updates, interact with the Telegram Bot API, and manage the bot's behavior.
 
-## Key Methods
+## Listener Methods
 
 The `Bot` class offers several methods to listen to different types of updates from Telegram:
 
@@ -15,7 +15,22 @@ The `Bot` class offers several methods to listen to different types of updates f
 Check out [features/listeners](/docs/features.html#_2-🎧-extensive-listener-methods) for more listenrers on the Bot class.
 :::
 
-These methods make it easy to respond to various types of user interactions within your bot.
+All these listener methods accepts a `Handler<CTX>`parameter which is a callback function that processes the incoming update. Let's say you're setting up handler for the `/start` command. It would be something like:
+
+```dart
+bot.command("start", (ctx) async {
+    await ctx.reply("Hey there!");
+});
+```
+
+Or lets say if you're listening for a particular text message such as: "Settings" as sent by a Keyboard Markup button press. We can listen to just that by:
+
+```dart
+bot.text("Settings", (ctx) async {
+    await ctx.reply("Roger, here's the current settings. ⚙️");
+    /// ...
+});
+```
 
 ## Powerful Features
 
@@ -24,12 +39,6 @@ In addition to the standard update handlers, the `Bot` class includes some power
 - **`Bot.filter`**: Allows you to register a callback function that is triggered based on custom conditions you define. This method provides a flexible way to create custom filters and respond to specific situations.
 
 - **`Bot.use`**: Enables you to attach plugins to the `Bot` instance. Plugins can be used to process and handle incoming updates or outgoing network requests. For more details on how to use plugins, refer to the plugin section.
-
-## Bot API Access
-
-The `Bot` class exposes the `api` property, which gives you access to the `RawAPI` instance associated with the bot. Through this instance, you can call any Telegram Bot API method directly, providing you with full control over your bot's functionality.
-
-The `Bot` class also exposes the `me` property, which contains information about the bot itself, such as its username and ID. This property is automatically set when the bot is initialized.
 
 ## Initialization
 
@@ -48,6 +57,27 @@ await bot.init();
 
 This will also set the `me` property, allowing you to access the bot's information immediately. You can also make sure if the Bot is initialized with the `Bot.initialized` getter.
 
+
+## Bot API Access
+
+The `Bot` class exposes the `api` property, which gives you access to the `RawAPI` instance associated with the bot. Through this instance, you can call any Telegram Bot API method directly, providing you with full control over your bot's functionality.
+
+That is you'll be able to call the `sendMessage` method as follows:
+
+```dart
+await bot.api.sendMessage(...);
+```
+
+Well, not only the `sendMessage`, but any other Bot API method. Make sure to check out the different methods you can use at the [Bot API Docs](https://core.telegram.org/bots/api#available-methods).
+
+The `Bot` class also exposes the `me` property, which contains information about the bot itself, such as its username and ID. This property is automatically set when the bot is initialized.
+
+Being said that, you can do this:
+
+```dart
+await bot.init();
+print("Hello, I'm ${bot.me.firstName} 👋");
+```
 
 ## Bot Constructors
 
