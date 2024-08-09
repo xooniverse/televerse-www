@@ -99,7 +99,7 @@ The `LoggerOptions` class allows you to configure detailed logging for your bot'
 
 Here’s an example of how to configure `LoggerOptions`:
 
-```dart
+```dart {3-12}
 final bot = Bot(
   "YOUR_BOT_TOKEN",
   loggerOptions: LoggerOptions(
