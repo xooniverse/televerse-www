@@ -87,7 +87,7 @@ typedef Handler<CTX extends Context> = FutureOr<void> Function(
 That's right, you can create your own custom context and integrate it with your bot. This gives you complete control over the Context class, allowing you to define your own methods and properties to increase flexibility and tailor the context to your specific needs.
 
 ::: tip
-We have an entire section covering how to create and use custom context. [Check it out here.](./custom-context)
+We have an entire section covering how to create and use custom context. [Check it out here.](/advanced/custom-context)
 :::
 
 ## Conclusion

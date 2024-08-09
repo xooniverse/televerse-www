@@ -61,9 +61,18 @@ export default defineConfig({
         text: 'Basics',
         base: "/basics",
         items: [
+          { text: "Bot Class", link: "/bot" },
+          { text: "RawAPI Class", link: "/api" },
           { text: 'Context', link: '/context' },
-          { text: 'Using Custom Context with Your Bot', link: '/custom-context' },
+          { text: 'Receiving Updates', link: '/receiving-updates' },
         ]
+      },
+      {
+        text: "Advanced",
+        base: "/advanced",
+        items: [
+          { text: 'Using Custom Context with Your Bot', link: '/custom-context' },
+        ],
       },
       {
         text: 'Plugins',
