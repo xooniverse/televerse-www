@@ -72,4 +72,4 @@ That's it, your bot should be running fine and listening to the `/start` command
 
 ---
 
-Televerse supports the latest Telegram Bot API - 7.8!
+Televerse supports the latest Telegram Bot API - 7.9!
