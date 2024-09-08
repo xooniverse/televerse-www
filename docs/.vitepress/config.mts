@@ -58,13 +58,21 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Basics',
+        text: 'Basic Concepts',
         base: "/basics",
         items: [
           { text: "Bot Class", link: "/bot" },
           { text: "RawAPI Class", link: "/api" },
           { text: 'Context', link: '/context' },
           { text: 'Receiving Updates', link: '/receiving-updates' },
+        ]
+      },
+      {
+        text: "Build Interactive Bots",
+        base: "/intermediate",
+        items: [
+          { text: "Using Keyboards", link: "/keyboards" },
+          { text: "Sending & Receiving Files", link: "/files" },
         ]
       },
       {
