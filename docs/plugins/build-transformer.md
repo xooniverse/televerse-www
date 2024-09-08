@@ -13,16 +13,16 @@ Below is a brief example of what a simple transformer might look like. This tran
 ```dart
 class AutoReplyEnforcer implements Transformer {
   @override
-  FutureOr<Map<String, dynamic>> transform(
+  Future<Map<String, dynamic>> transform(
     APICaller call,
-    APIMethod method,
-    Payload payload,
-  ) async {
+    APIMethod method, [
+    Payload? payload,
+  ]) async {
     final isSendMethod = APIMethod.sendMethods.contains(method);
     final isNotChatAction = method != APIMethod.sendChatAction;
 
     if (isSendMethod && isNotChatAction) {
-      payload.params["reply_markup"] = ForceReply().toJson();
+      payload!.params["reply_markup"] = ForceReply().toJson();
     }
 
     return await call(method, payload);
@@ -47,9 +47,9 @@ class CustomTransformer implements Transformer {
   @override
   Future<Map<String, dynamic>> transform(
     APICaller call,
-    APIMethod method,
-    Payload payload,
-  ) async {
+    APIMethod method, [
+    Payload? payload,
+  ]) async {
     // Custom transformation logic goes here
   }
 }
@@ -66,13 +66,13 @@ class CustomTransformer implements Transformer {
   @override
   Future<Map<String, dynamic>> transform(
     APICaller call,
-    APIMethod method,
-    Payload payload,
-  ) async {
+    APIMethod method, [
+    Payload? payload,
+  ]) async {
     // Check if the method is a "send" method
     if (APIMethod.sendMethods.contains(method)) {
       // Add a custom parameter to the payload
-      payload.params['custom_param'] = 'CustomValue';
+      payload!.params['custom_param'] = 'CustomValue';
     }
 
     // Continue with the API call using the modified payload
@@ -90,14 +90,14 @@ class CustomTransformer implements Transformer {
   @override
   Future<Map<String, dynamic>> transform(
     APICaller call,
-    APIMethod method,
-    Payload payload,
-  ) async {
+    APIMethod method, [
+    Payload? payload,
+  ]) async {
     final isSendMethod = APIMethod.sendMethods.contains(method);
     final isNotChatAction = method != APIMethod.sendChatAction;
 
     if (isSendMethod && isNotChatAction) {
-      payload['custom_param'] = 'CustomValue';
+      payload!['custom_param'] = 'CustomValue';
     }
 
     return await call(method, payload);
@@ -119,12 +119,13 @@ class CustomTransformer implements Transformer {
   @override
   Future<Map<String, dynamic>> transform(
     APICaller call,
-    APIMethod method,
-    Payload payload,
-  ) async {
+    APIMethod method, [
+    Payload? payload,
+  ]) async {
     // Your custom transformation logic
 
-    return await call(method, payload); // Pass the modified payload to the API
+    // Pass the modified payload to the API
+    return await call(method, payload); 
   }
 }
 ```
