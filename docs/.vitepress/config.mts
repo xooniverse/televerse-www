@@ -71,7 +71,8 @@ export default defineConfig({
         text: "Build Interactive Bots",
         base: "/intermediate",
         items: [
-          { text: "Using Keyboards", link: "/keyboards" }
+          { text: "Using Keyboards", link: "/keyboards" },
+          { text: "Sending & Receiving Files", link: "/files" },
         ]
       },
       {
