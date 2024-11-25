@@ -102,6 +102,11 @@ export default defineConfig({
           { text: 'Build A Transformer', link: '/build-transformer' },
         ]
       },
+      {
+        text: "Extras",
+        base: "/extras",
+        link: "/",
+      }
     ],
 
     socialLinks: [
