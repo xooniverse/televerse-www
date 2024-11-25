@@ -1,9 +1,5 @@
 # Migrating from Televerse v1.x.x to v2.0.0: A Journey of Improvement
 
-## 🚀 The Evolution of Conversation
-
-Imagine you're a brave developer, sailing the seas of Telegram bot development with Televerse v1.x.x. Your trusty library has served you well, but there's a new horizon calling - Televerse v2.0.0!
-
 ### 🌊 What Changed in the Conversation API?
 
 In the previous version, handling conversations felt like navigating through misty waters:
