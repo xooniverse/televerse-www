@@ -80,6 +80,7 @@ export default defineConfig({
         base: "/advanced",
         items: [
           { text: 'Using Custom Context with Your Bot', link: '/custom-context' },
+          { text: 'Guide for Webhook Mastery', link: '/webhook-bot' },
         ],
       },
       {
