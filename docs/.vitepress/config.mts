@@ -80,6 +80,7 @@ export default defineConfig({
         base: "/advanced",
         items: [
           { text: 'Using Custom Context with Your Bot', link: '/custom-context' },
+          { text: 'Guide for Webhook Mastery', link: '/webhook-bot' },
         ],
       },
       {
@@ -96,12 +97,18 @@ export default defineConfig({
               { text: "auto_retry", link: "/auto-retry" },
               { text: "auto_chat_action", link: "/auto-chat-action" },
               { text: "parse_mode_setter", link: "/parse-mode-setter" },
+              { text: "televerse_shelf", link: "/televerse-shelf" },
             ]
           },
           { text: 'Build A Middleware', link: '/build-middleware' },
           { text: 'Build A Transformer', link: '/build-transformer' },
         ]
       },
+      {
+        text: "Extras",
+        base: "/extras",
+        link: "/",
+      }
     ],
 
     socialLinks: [
