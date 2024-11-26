@@ -96,6 +96,7 @@ export default defineConfig({
               { text: "auto_retry", link: "/auto-retry" },
               { text: "auto_chat_action", link: "/auto-chat-action" },
               { text: "parse_mode_setter", link: "/parse-mode-setter" },
+              { text: "televerse_shelf", link: "/televerse-shelf" },
             ]
           },
           { text: 'Build A Middleware', link: '/build-middleware' },
