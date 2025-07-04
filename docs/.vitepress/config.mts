@@ -73,6 +73,7 @@ export default defineConfig({
         items: [
           { text: "Using Keyboards", link: "/keyboards" },
           { text: "Sending & Receiving Files", link: "/files" },
+          { text: "Handle Inline Queries", link: "/inline-queries" },
         ]
       },
       {
