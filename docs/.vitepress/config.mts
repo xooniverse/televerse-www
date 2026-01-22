@@ -6,35 +6,35 @@ export default defineConfig({
   title: "Televerse - Your gateway to seamless Telegram Bot Development",
   description: "Your gateway to a seamless Telegram Bot development",
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: 'https://televerse.xooniverse.com/assets/logo.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: 'https://televerse.weaverlabs.ca/assets/logo.png' }],
     ['meta', { name: 'description', content: 'A powerful Telegram Bot API Framework built with Dart' }],
-    ['meta', { name: 'keywords', content: 'Televerse, Telegram bot, Dart, Telegram API, bot framework, Xooniverse' }],
+    ['meta', { name: 'keywords', content: 'Televerse, Telegram bot, Dart, Telegram API, bot framework, Weaver Labs' }],
 
     // Open Graph Meta Tags
     ['meta', { property: 'og:title', content: 'Televerse' }],
     ['meta', { property: 'og:description', content: 'A powerful, easy-to-use, and highly customizable Telegram bot framework built with Dart language.' }],
-    ['meta', { property: 'og:image', content: 'https://televerse.xooniverse.com/assets/lockup-with-bg.png' }],
-    ['meta', { property: 'og:url', content: 'https://github.com/Xooniverse/televerse' }],
+    ['meta', { property: 'og:image', content: 'https://televerse.weaverlabs.ca/assets/lockup-with-bg.png' }],
+    ['meta', { property: 'og:url', content: 'https://github.com/theweaverlabs/televerse' }],
     ['meta', { property: 'og:site_name', content: 'Televerse' }],
 
     // Twitter Meta Tags
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'Televerse' }],
     ['meta', { name: 'twitter:description', content: 'A powerful, easy-to-use, and highly customizable Telegram bot framework built with Dart language.' }],
-    ['meta', { name: 'twitter:image', content: 'https://televerse.xooniverse.com/assets/lockup-with-bg.png' }],
+    ['meta', { name: 'twitter:image', content: 'https://televerse.weaverlabs.ca/assets/lockup-with-bg.png' }],
 
     // Robots Meta Tag
     ['meta', { name: 'robots', content: 'index, follow' }],
 
     // Alternate Links
-    ['link', { rel: 'alternate', hreflang: 'en', href: 'https://televerse.xooniverse.com/en' }],
+    ['link', { rel: 'alternate', hreflang: 'en', href: 'https://televerse.weaverlabs.ca/en' }],
 
     // Canonical Link
-    ['link', { rel: 'canonical', href: 'https://televerse.xooniverse.com' }],
+    ['link', { rel: 'canonical', href: 'https://televerse.weaverlabs.ca' }],
 
     // Author and Publisher
-    ['meta', { name: 'author', content: 'Xooniverse' }],
-    ['meta', { name: 'publisher', content: 'Xooniverse' }],
+    ['meta', { name: 'author', content: 'Weaver Labs' }],
+    ['meta', { name: 'publisher', content: 'Weaver Labs' }],
   ],
   themeConfig: {
     externalLinkIcon: true,
@@ -43,7 +43,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Docs', link: '/docs' },
-      { text: 'Examples', link: 'https://github.com/xooniverse/TeleverseExamples' }
+      { text: 'Examples', link: 'https://github.com/theweaverlabs/TeleverseExamples' }
     ],
 
     sidebar: [
@@ -73,6 +73,7 @@ export default defineConfig({
         items: [
           { text: "Using Keyboards", link: "/keyboards" },
           { text: "Sending & Receiving Files", link: "/files" },
+          { text: "Handle Inline Queries", link: "/inline-queries" },
         ]
       },
       {
@@ -112,7 +113,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: "github", link: 'https://github.com/xooniverse/televerse', }
+      { icon: "github", link: 'https://github.com/theweaverlabs/televerse', }
     ]
   }
 })

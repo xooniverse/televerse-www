@@ -50,7 +50,7 @@ bot.command('start', (ctx) async {
 
 ```dart [With URL]
 bot.command('start', (ctx) async {
-  const url = "https://televerse.xooniverse.com/assets/lockup-with-bg.png";
+  const url = "https://televerse.weaverlabs.ca/assets/lockup-with-bg.png";
 
   // Create the InputFile instance
   final photo = InputFile.fromUrl(url);

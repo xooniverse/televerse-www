@@ -79,5 +79,5 @@ This project is licensed under the MIT License.
 
 ---
 
-If you find this plugin useful, please consider giving it a star on [GitHub](https://github.com/xooniverse/auto_retry) and reporting any issues you encounter.
+If you find this plugin useful, please consider giving it a star on [GitHub](https://github.com/theweaverlabs/auto_retry) and reporting any issues you encounter.
 

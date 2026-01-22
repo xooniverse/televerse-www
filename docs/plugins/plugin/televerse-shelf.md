@@ -100,7 +100,7 @@ To use `televerse_shelf` effectively:
 2. **Customize Your Server**: Combine Televerse with Shelf’s routing and middleware to create versatile applications.
 3. **Run Your Bot**: Call `bot.start()` to initiate the bot alongside your server.
 
-For detailed examples and advanced usage, check out the [Televerse documentation](https://televerse.xooniverse.com).
+For detailed examples and advanced usage, check out the [Televerse documentation](https://televerse.weaverlabs.ca).
 
 ---
 
@@ -120,7 +120,7 @@ We’d love to see contributions from the community! Feel free to fork the repos
 
 ## 🌟 Shoot a Star
 
-If you find `televerse_shelf` helpful, consider giving us a star on our [GitHub repository](https://github.com/xooniverse/televerse_shelf). It motivates us to keep building cool tools!
+If you find `televerse_shelf` helpful, consider giving us a star on our [GitHub repository](https://github.com/theweaverlabs/televerse_shelf). It motivates us to keep building cool tools!
 
 ---
 
@@ -131,7 +131,7 @@ Need help? Have ideas? Join the discussion with other developers:
 <a href="https://telegram.me/TeleverseDart">
   <img src="https://img.shields.io/badge/Telegram%2F@TeleverseDart-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>
 </a>  
-<a href="https://github.com/xooniverse/televerse_shelf">
+<a href="https://github.com/theweaverlabs/televerse_shelf">
   <img src="https://img.shields.io/badge/GitHub%20Discussions-100000?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
