@@ -347,8 +347,8 @@ After completing the migration, you'll enjoy:
 
 If you encounter issues during migration:
 
-1. Check the [GitHub Issues](https://github.com/xooniverse/televerse/issues) for similar problems
-2. Review the [examples repository](https://github.com/xooniverse/TeleverseExamples) for updated patterns
+1. Check the [GitHub Issues](https://github.com/theweaverlabs/televerse/issues) for similar problems
+2. Review the [examples repository](https://github.com/theweaverlabs/TeleverseExamples) for updated patterns
 3. Join the [Telegram Group](https://telegram.me/TeleverseDart) for support
 
 Happy migrating! 🚀

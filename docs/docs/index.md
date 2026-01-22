@@ -1,4 +1,4 @@
-![](https://televerse.xooniverse.com/assets/banner-transparent.png)
+![](https://televerse.weaverlabs.ca/assets/banner-transparent.png)
 
 # Televerse Documentation
 
@@ -11,7 +11,7 @@ The documentation is structured to guide you through every aspect of using Telev
 - **Getting Started**: Learn the basics and set up your first bot.
 - **API Reference**: Detailed documentation of all public classes and methods.
 - **Guides**: Dive deeper into advanced topics such as handling updates, managing states, and working with custom keyboards.
-- **Examples**: Explore sample bots and code snippets that demonstrate common use cases and best practices. [Check out the examples here.](https://github.com/xooniverse/TeleverseExamples)
+- **Examples**: Explore sample bots and code snippets that demonstrate common use cases and best practices. [Check out the examples here.](https://github.com/theweaverlabs/TeleverseExamples)
 
 ## Community & Support
 

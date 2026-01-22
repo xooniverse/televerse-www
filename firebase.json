@@ -14,7 +14,7 @@
       },
       {
         "source": "/doc/custom-context",
-        "destination": "https://github.com/xooniverse/televerse/wiki/Using-Custom-Context-with-Your-Bot"
+        "destination": "https://github.com/theweaverlabs/televerse/wiki/Using-Custom-Context-with-Your-Bot"
       }
     ]
   }
